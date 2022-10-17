@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Extraindo funções
+    </title>
+</head>
+
+<body>
+    <canvas width="800" height="600">
+    </canvas>
+    <script>
+
+        function desenhaQuadrado(x, y, cor) {
+        
+            var tela = document.querySelector("canvas");
+            var pincel = tela.getContext("2d");
+
+            pincel.fillStyle = cor;
+            pincel.fillRect(x, y, 50, 50);
+            pincel.fillStroke = "black";
+            pincel.strokeRect(x, y, 50, 50);
+            
+        }
+
+        for(var x = 0; x < 600; x = x + 50) {
+
+            desenhaQuadrado(x, 0, "red");
+
+        }
+        /*var x = 0;
+
+            while(x < 600) {
+            desenhaQuadrado(x, 0, "green");
+            desenhaQuadrado(x, 50, "red");
+            desenhaQuadrado(x, 100, "blue");
+            x = x + 50;
+        }
+*/
+/*        desenhaQuadradoVerde(0, 0, "blue");
+        desenhaQuadradoVerde(0, 50, "red");
+        desenhaQuadradoVerde(0, 100, "yellow");
+*/
+/*        function desenhaQuadradoVermelho(x, y) {
+        
+            var tela = document.querySelector("canvas");
+            var pincel = tela.getContext("2d");
+
+            pincel.fillStyle = "red";
+            pincel.fillRect(x, y, 50, 50);
+            pincel.fillStroke = "black";
+            pincel.strokeRect(x, y, 50, 50);
+            
+        }
+
+        desenhaQuadradoVermelho(50, 0);
+        desenhaQuadradoVermelho(50, 50);
+        desenhaQuadradoVermelho(50, 100);
+*/        
+    </script>
+</body>

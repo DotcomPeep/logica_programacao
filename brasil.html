@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Bandeira do Brasil
+    </title>
+</head>
+
+<body>
+    <canvas width="800" height="600">
+    </canvas>
+    <script>
+        // Treinando
+        // Criando a bandeira do Brasil
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = "green";
+        pincel.fillRect(0, 0, 800, 600);
+
+        pincel.fillStyle = "yellow";
+        pincel.beginPath();
+        pincel.moveTo(400, 0)
+        pincel.lineTo(0, 300);
+        pincel.lineTo(400, 600);
+        pincel.lineTo(800, 300);
+        pincel.fill();
+
+        pincel.fillStyle = "darkblue";
+        pincel.beginPath(); 
+        pincel.arc(400, 300, 200, 0, 2 * 3.14); // Tamanho 50, angulo inicial 0, angulo final 2 * 3.14
+        pincel.fill();
+
+        pincel.fillStyle = "white";
+        pincel.beginPath();
+        pincel.moveTo(225, 200);
+        pincel.lineTo(595, 350);
+        pincel.lineTo(575, 400);
+        pincel.lineTo(205, 250);
+        pincel.fill();
+
+    </script>
+</body>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Bandeira do Japão
+    </title>
+</head>
+
+<body style="background-color:black;">
+    <canvas width="1335" height="720">
+    </canvas>
+    <script>
+        // Treinando
+        // Criando a bandeira do Japão
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = "white";
+        pincel.fillRect(0, 0, 1335, 720);
+
+        pincel.fillStyle = "darkred";
+        pincel.beginPath();
+        pincel.arc(667.5, 360, 200, 0, 2 * 3.14);
+        pincel.fill();
+
+    </script>
+</body>

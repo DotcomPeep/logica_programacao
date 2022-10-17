@@ -1,0 +1,79 @@
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Creeper!!!
+    </title>
+</head>
+
+<body>
+    <canvas width="800" height="600">
+    </canvas>
+    <script>
+        var tela = document.querySelector("canvas");
+        var pincel = tela.getContext("2d");
+
+        pincel.fillStyle = "grey";
+        pincel.fillRect(0, 0, 800, 600);
+        
+        pincel.fillStyle = "green";
+        pincel.fillRect(200, 100, 500, 450);
+
+        pincel.fillStyle = "black";
+        pincel.beginPath();
+        pincel.moveTo(230, 130);
+        pincel.lineTo(230, 250);
+        pincel.lineTo(400, 250);
+        pincel.lineTo(400, 130);
+        pincel.fill();
+
+        pincel.moveTo(480, 130);
+        pincel.lineTo(480, 250);
+        pincel.lineTo(660, 250);
+        pincel.lineTo(660, 130);
+        pincel.fill();
+
+        pincel.moveTo(275, 400);
+        pincel.lineTo(275, 500);
+        pincel.lineTo(410, 500);
+        pincel.lineTo(410, 400);
+        pincel.fill();
+
+        pincel.moveTo(370, 300);
+        pincel.lineTo(370, 400);
+        pincel.lineTo(530, 400);
+        pincel.lineTo(530, 300);
+        pincel.fill();
+
+        pincel.moveTo(490, 400);
+        pincel.lineTo(490, 500);
+        pincel.lineTo(620, 500);
+        pincel.lineTo(620, 400);
+        pincel.fill();
+        
+        /*Outra forma de se fazer o creeper
+        
+        <canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    // cabeça
+    pincel.fillStyle = 'darkgreen';
+    pincel.fillRect(200,50,350,300);
+
+    // olhos
+    pincel.fillStyle = 'black';
+    pincel.fillRect(250, 110, 90, 90);
+    pincel.fillRect(410, 110, 90, 90);
+
+    // nariz
+    pincel.fillRect(340, 200, 70, 100);
+
+    // boca ou barba
+    pincel.fillRect(300, 240, 40, 110);
+    pincel.fillRect(410, 240, 40, 110);    
+*/
+    </script>
+</body>
